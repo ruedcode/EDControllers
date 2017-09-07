@@ -14,6 +14,8 @@
 		A1E0797F1F6012C50045AA20 /* EDProgressView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E0797C1F6012C50045AA20 /* EDProgressView.framework */; };
 		A1E079811F6012CA0045AA20 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079801F6012CA0045AA20 /* MBProgressHUD.framework */; };
 		A1E079841F6025660045AA20 /* EDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079831F6025660045AA20 /* EDTableViewController.swift */; };
+		A1E079A81F6147A90045AA20 /* EDHTMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079A71F6147A90045AA20 /* EDHTMLViewController.swift */; };
+		A1E079AA1F6147D90045AA20 /* EDHTMLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E079A91F6147D90045AA20 /* EDHTMLViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A1E0797C1F6012C50045AA20 /* EDProgressView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EDProgressView.framework; path = Carthage/Build/iOS/EDProgressView.framework; sourceTree = "<group>"; };
 		A1E079801F6012CA0045AA20 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = Carthage/Build/iOS/MBProgressHUD.framework; sourceTree = "<group>"; };
 		A1E079831F6025660045AA20 /* EDTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDTableViewController.swift; sourceTree = "<group>"; };
+		A1E079A71F6147A90045AA20 /* EDHTMLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDHTMLViewController.swift; sourceTree = "<group>"; };
+		A1E079A91F6147D90045AA20 /* EDHTMLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDHTMLViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				A1E0796B1F6005FC0045AA20 /* Info.plist */,
 				A1E079721F6006120045AA20 /* EDViewController.swift */,
 				A1E079831F6025660045AA20 /* EDTableViewController.swift */,
+				A1E079A71F6147A90045AA20 /* EDHTMLViewController.swift */,
+				A1E079A91F6147D90045AA20 /* EDHTMLViewController.xib */,
 			);
 			path = EDControllers;
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E079AA1F6147D90045AA20 /* EDHTMLViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +197,7 @@
 			files = (
 				A1E079841F6025660045AA20 /* EDTableViewController.swift in Sources */,
 				A1E079731F6006120045AA20 /* EDViewController.swift in Sources */,
+				A1E079A81F6147A90045AA20 /* EDHTMLViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
