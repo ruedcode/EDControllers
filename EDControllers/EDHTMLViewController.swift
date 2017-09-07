@@ -14,24 +14,16 @@ open class EDHTMLViewController: EDViewController {
 	@IBOutlet open weak var webView: UIWebView!
 	@IBOutlet open weak var cancelButton: UIBarButtonItem!
 
-	required public init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-		setup()
-	}
 
-	init() {
-		setup()
-	}
-
-	func setup() {
+	open override func loadView() {
 		if let view = Bundle.main.loadNibNamed("EDHTMLViewController", owner: self, options: nil)?.first as? UIView {
 			self.view = view
 		}
 	}
-
     override open func viewDidLoad() {
         super.viewDidLoad()
 
+		print("wwwo \(self.webView)")
         // Do any additional setup after loading the view.
     }
 
