@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EDHTMLViewController: EDViewController {
+open class EDHTMLViewController: EDViewController {
 
 	@IBOutlet open weak var navigationBar: UINavigationBar!
 	@IBOutlet open weak var webView: UIWebView!
