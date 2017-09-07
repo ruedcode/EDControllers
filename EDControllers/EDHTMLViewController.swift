@@ -16,7 +16,8 @@ open class EDHTMLViewController: EDViewController {
 
 
 	open override func loadView() {
-		if let view = Bundle.main.loadNibNamed("EDHTMLViewController", owner: self, options: nil)?.first as? UIView {
+
+		if let view = Bundle(for: EDHTMLViewController.self).loadNibNamed("EDHTMLViewController", owner: self, options: nil)?.first as? UIView {
 			self.view = view
 		}
 	}
