@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EDHTMLViewController" customModule="EDControllers" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="EGv-Ma-BEk" id="Iwu-Sb-1pU"/>
+                <outlet property="navigationBar" destination="IQr-qs-AHs" id="CVi-hS-V69"/>
+                <outlet property="webView" destination="pZ5-oH-ogs" id="Lgt-8U-4tL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQr-qs-AHs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="TV0-K5-Jog"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="Title" id="hlw-t2-3EH">
+                            <barButtonItem key="leftBarButtonItem" title="Item" id="EGv-Ma-BEk">
+                                <connections>
+                                    <action selector="cancelAction:" destination="-1" id="jaq-pb-fYJ"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZ5-oH-ogs">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pZ5-oH-ogs" firstAttribute="top" secondItem="IQr-qs-AHs" secondAttribute="bottom" id="EpE-61-54i"/>
+                <constraint firstItem="IQr-qs-AHs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y0D-C1-RwG"/>
+                <constraint firstAttribute="bottom" secondItem="pZ5-oH-ogs" secondAttribute="bottom" id="ZMp-Mr-YkS"/>
+                <constraint firstAttribute="trailing" secondItem="IQr-qs-AHs" secondAttribute="trailing" id="dxU-SH-q9v"/>
+                <constraint firstItem="pZ5-oH-ogs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="maA-g6-GsW"/>
+                <constraint firstItem="IQr-qs-AHs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pyy-G4-SIi"/>
+                <constraint firstAttribute="trailing" secondItem="pZ5-oH-ogs" secondAttribute="trailing" id="svi-PO-vLz"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
