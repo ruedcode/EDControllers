@@ -14,7 +14,7 @@ open class EDHTMLViewController: EDViewController {
 	@IBOutlet open weak var webView: UIWebView!
 	@IBOutlet open weak var cancelButton: UIBarButtonItem!
 
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		setup()
 	}
@@ -25,18 +25,18 @@ open class EDHTMLViewController: EDViewController {
 		}
 	}
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-	@IBAction func cancelAction(_ sender: Any) {
+	@IBAction open func cancelAction(_ sender: Any) {
 		dismiss(animated: true, completion: nil)
 	}
 
