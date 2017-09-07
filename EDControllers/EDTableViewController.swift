@@ -8,20 +8,20 @@
 
 import UIKit
 
-public class EDTableViewController: EDViewController, UITableViewDelegate, UITableViewDataSource {
+open class EDTableViewController: EDViewController, UITableViewDelegate, UITableViewDataSource {
 
-	@IBOutlet public weak var tableView: UITableView!
+	@IBOutlet open weak var tableView: UITableView!
 
 	// MARK: - UITableView
-	public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+	open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		return UITableViewCell()
 	}
 
-	public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return 0
 	}
 
-	public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+	open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)
 	}
 
