@@ -19,6 +19,10 @@ open class EDHTMLViewController: EDViewController {
 		setup()
 	}
 
+	init() {
+		setup()
+	}
+
 	func setup() {
 		if let view = Bundle.main.loadNibNamed("EDHTMLViewController", owner: self, options: nil)?.first as? UIView {
 			self.view = view
