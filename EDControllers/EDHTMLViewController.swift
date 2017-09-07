@@ -23,8 +23,6 @@ open class EDHTMLViewController: EDViewController {
 	}
     override open func viewDidLoad() {
         super.viewDidLoad()
-
-		print("wwwo \(self.webView)")
         // Do any additional setup after loading the view.
     }
 

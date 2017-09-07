@@ -27,8 +27,8 @@
                         <constraint firstAttribute="height" constant="64" id="TV0-K5-Jog"/>
                     </constraints>
                     <items>
-                        <navigationItem title="Title" id="hlw-t2-3EH">
-                            <barButtonItem key="leftBarButtonItem" title="Item" id="EGv-Ma-BEk">
+                        <navigationItem title="HTML View" id="hlw-t2-3EH">
+                            <barButtonItem key="leftBarButtonItem" title="Close" id="EGv-Ma-BEk">
                                 <connections>
                                     <action selector="cancelAction:" destination="-1" id="jaq-pb-fYJ"/>
                                 </connections>
