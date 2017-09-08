@@ -19,7 +19,17 @@ open class EDViewController: UIViewController {
 
 	open func backAction() {
 		if let navController = navigationController {
-			navController.popViewController(animated: true)
+			if let index = navController.viewControllers.index(of: self), index == 0 {
+				if navController.presentingViewController != nil {
+					navController.dismiss(animated: true, completion: nil)
+				}
+			}
+			else {
+				navController.popViewController(animated: true)
+			}
+		}
+		else if presentingViewController != nil {
+			dismiss(animated: true, completion: nil)
 		}
 	}
 
